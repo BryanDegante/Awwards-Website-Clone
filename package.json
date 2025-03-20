@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "core-js": "^3.41.0",
+    "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icon": "^1.0.0",
