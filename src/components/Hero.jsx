@@ -15,7 +15,7 @@ const Hero = () => {
     
 	const totalVideos = 4;
 	const nextVideoRef = useRef(null);
-    const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
     
     const handleVideoLoad = () => {
         setLoadedVideos((prev) => prev + 1);
