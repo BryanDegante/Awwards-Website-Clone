@@ -16,9 +16,9 @@ const Footer = () => {
 					©Nova 2024. All rights reserved
 				</p>
 				<div className="flex justify-center gap-4 md:justify-start">
-					{icons.map((icon) => (
+					{icons.map((icon,index) => (
 						<a
-							
+							key={index}
 							className=" text-black transition-colors duration-500 ease-in-out text-2xl hover:text-white"
 						>
 							{icon.icon}

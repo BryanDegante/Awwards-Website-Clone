@@ -89,8 +89,9 @@ const NavBar = () => {
 								src={audio}
 								loop
 							/>
-							{[1, 2, 3, 4].map((bar) => (
+							{[1, 2, 3, 4].map((bar,index) => (
 								<div
+									key={index}
 									className={`indicator-line ${
 										isIndicatorActive ? 'active' : ''
 									}`}
