@@ -4,6 +4,10 @@ import Button from './Button';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import video1 from '../assets/videos/hero-1.mp4'
+import video2 from '../assets/videos/hero-2.mp4'
+import video3 from '../assets/videos/hero-3.mp4'
+import video4 from '../assets/videos/hero-4.mp4'
 
 gsap.registerPlugin(ScrollTrigger); 
 
@@ -12,10 +16,10 @@ const Hero = () => {
 	const [hasClicked, sethasClicked] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
 	const [loadedVideos, setLoadedVideos] = useState(0);
-    
+    const videos = new Array(video1,video2,video3,video4)
 	const totalVideos = 4;
 	const nextVideoRef = useRef(null);
-    const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) => videos[index];
     
     const handleVideoLoad = () => {
         setLoadedVideos((prev) => prev + 1);

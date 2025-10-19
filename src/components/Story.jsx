@@ -3,6 +3,7 @@ import AnimatedTitle from './AnimatedTitle.jsx';
 import gsap from 'gsap';
 import RoundedCorners from './RoundedCorners.jsx';
 import Button from './Button.jsx';
+import entrance from '../assets/img/entrance.webp';
 const Story = () => {
 	const frameRef = useRef('');
 
@@ -63,7 +64,7 @@ const Story = () => {
 							<div className="story-img-content">
 								<img
 									ref={frameRef}
-									src="img/entrance.webp"
+									src={entrance}
 									alt="entrance"
 									className="object-contain"
 									onMouseLeave={handleMouseLeave}
